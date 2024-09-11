@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Grey+Qo&family=Jacquard+12&family=Maven+Pro:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nabla&family=Teko:wght@300..700&display=swap');
+.types-of-workoutOptions-div img {
+    border-radius: 5px 5px 0px 0px;
+    width: 270px;
+    height: 170px;
+    border: 0px solid rgba(128, 128, 128, 0);
+}
+/* .types-of-workoutOptions-div img:hover{
+        border: 5px solid rgba(128, 128, 128, 0.059);
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.425);
+} */
+.types-of-workoutOptions-div p{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Titillium Web", sans-serif;
+        font-style: normal;
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#list-of-workoutOptions-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 60px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    font-family: "Maven Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.types-of-workoutOptions-div:hover{
+    transition: all ease 0.5s;
+    scale: 1.1;
+}
+.types-of-workoutOptions-div{
+    box-shadow: 0px 0px 5px 0.5px rgb(10, 10, 10);
+    border-radius: 5px;
+    /* background-color: rgb(78, 78, 78); */
+}
+#workout-categories-subTitles {
+    color: rgba(255, 255, 255, 0.356);
+    font-size: 17px;
+    padding: 5px 50px 0px 50px;
+    margin: 0;
+    text-align: center;
+    font-family:"Titillium Web",
+        sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    word-spacing: 3px;
+}
+#workout-Plans-background{
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+@media screen and (max-width:500px) {
+    #workout-categories-subTitles{
+        margin: 20px 0px;
+    }
+}

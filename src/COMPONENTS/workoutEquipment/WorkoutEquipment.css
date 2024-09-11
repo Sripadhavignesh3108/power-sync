@@ -1,0 +1,71 @@
+#GroupEquipment {
+  color: white;
+  width: 40.5vw;
+  min-width: 310px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+#GroupEquipment p {
+  width: 250px;
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  height: 40px;
+  align-content: center;
+  transition: all linear 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.815);
+  border-radius: 3px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+#GroupEquipment p:hover {
+  border: 1px solid #ffc506;
+}
+
+#GroupEquipment p:active,
+#buttonNext:active,
+#buttonPrevious:active {
+  scale: 0.85;
+}
+#WorkoutEquipment-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.256);
+  border-radius: 10px;
+  min-width: 290px;
+  max-width: 550px;
+  padding: 15px;
+}
+#titleForMuscleGroup {
+  font-size: 28px;
+  color: white;
+}
+#equipment-navigation {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+#backgroudDivOfEquipment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+#equipmentWarning {
+  color: red;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  visibility: hidden;
+  margin: -5px;
+}

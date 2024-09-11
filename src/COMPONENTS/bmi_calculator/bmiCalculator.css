@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+#BMIBackground {
+  display: flex;
+  justify-content: end;
+  padding-right: 10%;
+  align-items: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-image: url(./pngwing.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: animationBackground 2s linear infinite;
+}
+
+@keyframes animationBackground {
+    0%{
+        background-position-X:60px;
+    }
+    50%{
+        background-position-x: 20px;
+    }
+    100%{
+        background-position-x:60px ;
+    }
+}
+.bmi-container {
+  width: 80%;
+  min-width: 310px;
+  height: 430px;
+  max-width: 500px;
+  padding: 0px 10px 0px 30px;
+  border-radius: 13px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.689);
+  color: white;
+  backdrop-filter: blur(10px);
+}
+.bmi-container h1 {
+  text-align: center;
+  font-size: 38px;
+  color: #ffc506;
+  /* margin: 15px auto; */
+}
+.form-group-bmi legend{
+    color: #ffc506;
+}
+.form-group-bmi {
+  margin-bottom: 15px;
+}
+
+.form-group-bmi fieldset {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+border-color: #ffc506;
+}
+.form-group-bmi input::-webkit-inner-spin-button{
+  display: none;
+}
+.form-group-bmi input {
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  font-size: 20px;
+  text-indent: 10px;
+}
+.form-group-bmi label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 21px;
+  font-weight: 400;
+  outline: none;
+}
+
+.bmi-container button {
+  width: 95%;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #ffc506;
+  color: #ffc506;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.bmi-container button:hover {
+  background-color: #ffc506cb;
+  color: black;
+}
+
+.bmi-result {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.bmi-result h2 {
+  font-size: 24px;
+  margin: 5px;
+  font-weight: 500;
+}
+
+.bmi-result p {
+  font-size: 18px;
+  color: #cdcdcd;
+  margin: 10px;
+}
+@media screen and (max-width:700px) {
+    #BMIBackground{
+        background: transparent;
+        justify-content: center;
+        padding: 0;
+    }
+    .bmi-container{
+        padding: 0;
+    }
+        .bmi-container fieldset{
+            width: 90%;
+        }
+        .bmi-container button{
+            width: 97%;
+        }
+}

@@ -1,0 +1,11 @@
+.AppBody{
+  background: linear-gradient(to top left , rgb(27, 27, 27),rgb(37, 37, 37),rgb(50, 50, 50));
+  width: 100%;
+  min-height:100vh ;
+  margin: 0;
+  z-index: -20;
+}
+footer{
+  display: flex;
+  justify-content: center;
+}

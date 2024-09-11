@@ -1,0 +1,243 @@
+#backGroundForLevel {
+  /* border: 2px solid white; */
+  height: 98vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  align-items: end;
+  padding-right: 15%;
+  background-color: none;
+    background-image: url(../bmi_calculator/pngwing.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      animation: animationBackground 2s linear infinite;
+}
+#level-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50%;
+  min-width: 320px;
+  gap: 20px;
+}
+.levelTypeOfDiv {
+  transition: all linear 0.3s;
+  align-content: center;
+  font-size: 2vw;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0%;
+  color: transparent;
+  -webkit-text-stroke: 1px aliceblue;
+  cursor: pointer;
+}
+
+.levelTypeOfDiv:hover {
+  color: #ffe506;
+  -webkit-text-stroke: 0px;
+  scale: 1.1;
+  /* box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.228); */
+  padding: 0px 20px 0px 20px;
+  border-radius: 100px;
+}
+.levelTypeOfDiv:active {
+  scale: 1;
+}
+.levelTypeOfDiv h1 {
+  margin: 0;
+  font-size: 60px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+/* ######################################################################### */
+/* ######################################################################### */
+
+#FilterationByLevel-background {
+  background-color: rgb(252, 252, 252);
+  min-height: 100vh;
+  font-family: "Titillium Web", sans-serif;
+  font-style: normal;
+}
+.pressStart {
+  text-align: center;
+  margin: 0px;
+  padding-bottom: 10px;
+  font-size: 19px;
+  font-weight: 500;
+  position: sticky;
+  /* top: 60px;
+  z-index: 3; */
+  background-color: inherit;
+}
+#titleOfPage {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+#FilterationByLevel-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding:20px 0px;
+  row-gap: 50px;
+}
+.FilterationByLevel-cards {
+  width: 270px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.228);
+  border-radius: 8px;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+  transition: all linear 0.2s;
+  /* cursor: pointer; */
+}
+.FilterationByLevel-cards:hover{
+  scale: 1.05;
+}
+.workoutsButton {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  position: sticky;
+  background-color: inherit;
+  top: 0px;
+  z-index: 2;
+}
+
+.workoutsButton p {
+  border: 0.5px solid grey;
+  padding: 7px 25px;
+  border-radius: 4px;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all linear 0.2s;
+  display: inline;
+}
+.workoutsButton p:hover {
+  background-color: #ffe506;
+  scale: 1.1;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+.workoutsButton p:active {
+  scale: 1;
+}
+/* .FilterationByLevel-cards:hover {
+  scale: 1.05;
+} */
+
+.FilterationByLevel-cards img {
+  width: 230px;
+}
+.FilterationByLevel-title {
+  font-size: 19px;
+  text-align: center;
+  text-transform: capitalize;
+  word-spacing: 2px;
+  margin: 5px;
+  font-weight: 500;
+}
+.FilterationByLevel-subData span:nth-child(1) {
+  background-color: #ffe506;
+  padding: 5px 18px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 13px;
+}
+.FilterationByLevel-subData span:nth-child(2) {
+  background-color: rgb(222, 146, 255);
+  padding: 5px 13px;
+  border-radius: 30px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 13px;
+  align-content: center;
+}
+.FilterationByLevel-subData {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  margin: 7px;
+}
+#upArrow{
+  position:sticky;
+  z-index: 10;
+  top: 20px;
+  margin-right: 20px;
+  float: right;
+  animation: upArrow linear;
+  animation-timeline: scroll();
+}
+#upArrow img{
+  animation: upArrowShaking 0.7s linear infinite;
+  min-width: 25px;
+  width: 2.5vw;
+}
+
+@keyframes upArrowShaking {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+@keyframes upArrow {
+  0%{
+    transform: translateY(-30vh);
+  }
+  1%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+@media screen and (max-width:500px) {
+  .levelTypeOfDiv h1{
+    font-size: 37px;
+  }
+    #backGroundForLevel{
+      align-items: center;
+      padding: 0;
+      background: transparent;
+    }
+    
+    .levelTypeOfDiv img{
+      width: 45px;
+    }
+    #titleOfPage{
+      font-size: 30px;
+    }
+    .FilterationByLevel-cards{
+      width: 230px;
+      height: 310px;
+    }
+    .FilterationByLevel-cards img{
+      width: 170px;
+    }
+    .FilterationByLevel-title{
+      font-size: 16px;
+    }
+}
